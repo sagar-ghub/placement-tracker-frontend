@@ -1,38 +1,92 @@
+html,
+body {
+  margin: 0;
+  background-image: linear-gradient(-45deg, #162c35 70%, #0c252f 100%);
+}
+
 .App {
+  font-family: sans-serif;
+  height: 100vh;
+
+  color:white;
+  
+}
+table,th,tr,td{
+  color:white;
   text-align: center;
+  width: 240px;
+ 
+}
+::-webkit-scrollbar {
+  width: 3px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey; 
+  border-radius: 10px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background:#30c2cf ; 
+  border-radius: 10px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.doughnut {
+  width: 60% !important;
+  height: 60% !important;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+thead, tbody { display: block; }
+
+tbody {
+    height: 70vh;       /* Just for the demo          */
+    overflow-y: auto;    /* Trigger vertical scroll    */
+    overflow-x: hidden;  /* Hide the horizontal scroll */
 }
 
-.App-link {
-  color: #61dafb;
-}
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+.heading_tag{
+  font-family: 'Monoton', cursive;
+  font-weight: 600;
+  font-size: xx-large;
+  padding: 0px 0px 20px 0px;
+ 
+}
+.heading_tag span{
+  /* background-image: linear-gradient(-90deg,#adfbda 0,#35c3ff 30%,#fda399 50%,#76d880 70%,#ebf38b 90%,#adfbda 100%); */
+  /* -webkit-text-fill-color: transparent; */
+  background: -webkit-linear-gradient(-180deg,#adfbda 0,#35c3ff 30%,#fda399 50%,#76d880 70%,#ebf38b 90%,#adfbda 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.app_container{
+ /* background-color: #000 ; */
+  margin:0px 150px;
+  
+}
+.color_nav{
+  /* font-family: 'Monoton', cursive */
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+ 
+
+  font-weight: 500;
+
+}
+.color_nav .navbar-brand{
+  background: -webkit-linear-gradient(-180deg,#adfbda 0,#35c3ff 30%,#fda399 50%,#76d880 70%,#ebf38b 90%,#adfbda 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: xx-large;
+}
+.color_nav .nav-link{
+  color:#28d78e;
+  font-size: large;
+  font-weight: 500;
+  border-radius: 15px;
+  margin-right: 20px;
+  padding-top: 10px;
+
 }
